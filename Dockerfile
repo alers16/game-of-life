@@ -1,5 +1,5 @@
 FROM eclipse-temurin:8-jre
 WORKDIR /app
-COPY target/*.jar /app/app.jar
+COPY target/*.war /app/app.war
 EXPOSE 8080
-CMD ["java","-jar","/app/app.jar"]
+CMD ["java","-jar","/app/app.war"]
